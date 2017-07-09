@@ -1,5 +1,5 @@
 tabchi = dofile('./bot/funcation.lua')
-tabchi_id = 123456789
+tabchi_id = 431003445
 ---------------------------------
 
 json = dofile('./libs/JSON.lua')
@@ -13,7 +13,7 @@ http = require "socket.http"
 https = require "ssl.https"
 -----~~~~~~~~~~~~~~~~
 d = dofile('./libs/redis.lua')
-config_sudo = {987654321}
+config_sudo = {68853039}
 function dl_cb(arg, data)
  --vardump(data)
  --vardump(arg)
@@ -156,7 +156,7 @@ d:del("tallmsg")
 d:del("asgp")
 d:del("tgp")
 d:del("tusers")
-tabchi.sendText(msg.chat_id_, msg.id_,1,' ♻️آمار تبلیغ گر با موفقیت ریستارت شد ',1,'md')
+tabchi.sendText(msg.chat_id_, msg.id_,1,' ⚙️آمار تبلیغ گر با موفقیت بروزرسانی شد ',1,'md')
         print("Tabchi [ Message ]")
 end
 
@@ -180,7 +180,7 @@ end
 if text == 'reload' and is_sudo(msg) then
  dofile('./bot/funcation.lua')
  dofile('./bot/api.lua')
-tabchi.sendText(msg.chat_id_,msg.id_,1,'*♻️ریلود با موفقیت انجام شد*',1,'md')
+tabchi.sendText(msg.chat_id_,msg.id_,1,'*⚙️ریلود با موفقیت انجام شد*',1,'md')
 end
 if text == 'git pull' and is_sudo(msg) then
 text = io.popen("git pull"):read('*all')
@@ -191,7 +191,7 @@ local gps = d:scard("asgp") or 0
 local user = d:scard("ausers")
 local gp = d:scard("agp") or 0
 local allmsg = d:get("aallmsg") or 0
-local text = '📊آمار تبلیغ گر شما \n\n📩 `تمام پیام ها :` *'..allmsg..'*\n\n`👨‍👩‍👧‍👦 سوپرگروه ها  :`* '..gps..'*\n\n`👥 گروه ها  :` *'..gp..'*`\n\n🗣 پی وی ها : `*'..user..'*'
+local text = '🔥آمار تبلیغ گر شما \n\n☘️ `تمام پیام ها :` *'..allmsg..'*\n\n`☘️ سوپرگروه ها  :`* '..gps..'*\n\n`☘️ گروه ها  :` *'..gp..'*`\n\n☘️ پی وی ها : `*'..user..'*'
  tabchi.sendText(msg.chat_id_, msg.id_,1,text,1,'md')
  end
 if is_sudo(msg) then
