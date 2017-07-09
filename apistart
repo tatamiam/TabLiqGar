@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 cd $HOME/botchi
-token="Token Your Bot api"
+token="431003445:AAEmZQLudExW05kY-KSB4GtprEMi560Ttr8"
 function print_logo() {
 	echo -e "\033[38;5;600m"
 	echo -e "          TabLiqGar"
